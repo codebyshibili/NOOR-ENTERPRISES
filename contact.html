@@ -22,6 +22,8 @@
         
         <!-- Styles Include -->
         <link rel="stylesheet" href="assets/css/style.css">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
         
     </head>
 
@@ -44,6 +46,10 @@
         <!-- Cursor Effect -->
         <div class="pointer bnz-pointer" id="bnz-pointer"></div>
 
+        <div class="name-topper">
+         NOOR ENTERPRISES
+      </div>
+
         <!-- Header -->
 		<header class="header">				
             <div class="container">
@@ -56,11 +62,11 @@
                     
                     <div class="mainnav d-none d-lg-block">
                         <ul class="main_menu">
-                            <li class="menu-item active"><a href="index.html">Home</a></li>
+                            <li class="menu-item"><a href="index.html">Home</a></li>
                             <li class="menu-item"><a href="about.html">About</a></li>
                             <li class="menu-item"><a href="service.html">Services</a></li>
                             <li class="menu-item"><a href="projects.html">Projects</a></li>
-                            <li class="menu-item"><a href="#0">Contacts</a></li>
+                            <li class="menu-item active"><a href="#0">Contacts</a></li>
 
                         </ul>
                     </div>
@@ -117,7 +123,7 @@
                                 </ul>
                             </div>
                             <div class="copyright">
-                                 <p>Noor Enterprises 2023. All Rights Reserved</p>
+                                 <p>Noor Enterprises 2026. All Rights Reserved</p>
                             </div>
                         </div>
                     </div>
@@ -132,7 +138,7 @@
                 <a href="index.html" class="dark_logo"><img src="assets/img/logo.png" alt="logo"></a>
             </div>
 			<div class="aside_info_inner">
-                <p>NOOR ENTERPRISES Architects is a full-service design firm providing architecture architecture.</p>
+                <p>NOOR ENTERPRISES is a full-service firm providing interior design solutions.</p>
                 
                 <div class="aside_info_inner_box">
                     <h5>Contact Info</h5>
@@ -140,7 +146,7 @@
                     <a href="mailto:info@noorenterprisesuae.com"><p>info@noorenterprisesuae.com</p></a>
 
                     <h5>Office Address</h5>
-                    <p>Dubai,UAE</p>
+                    <p>Sharjah,UAE</p>
                 </div>
                 <div class="social_sites">
                     <ul class="d-flex align-items-center justify-content-center">
@@ -171,11 +177,11 @@
         
         <!-- Main Wrapper-->
         <main class="wrapper">
-            <section class="gmap box_padding">
+            <!-- <section class="gmap box_padding">
 				<div class="gmapbox" data-aos="zoom-in" data-aos-duration="1000">
                     <div id="googleMap" class="map"></div>
                 </div>
-			</section>
+			</section> -->
 
             <section class="contact_us bg-dark-200">
                 <div class="container">
@@ -183,22 +189,24 @@
                         <div class="col-lg-5" data-aos="fade-right" data-aos-duration="1000">
                             <div class="section-header">
                                 <h1 class="text-white text-uppercase mb-4">LET’S DISCUSS NEXT PROJECTS</h1>
-                                <p class="$gray-600">The talent at Mrittik runs wide and deep. Across many markets, geographies and typologies, our team members are some of the finest professionals in the industry.. We’ve grouped our work into five categories: places, venues, spaces, experiences and events.</p>
+                                <p class="$gray-600">From interior design, architecture, landscape, and fit-out solutions to CCTV security systems and durable tents & sheds, our team delivers integrated services across residential, commercial, and industrial projects. We’ve organized our expertise into focused service categories to ensure quality execution, functional excellence, and dependable results across every project we undertake.</p>
                             </div>
                         </div>
-                        <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
-                            <div class="home_contact">
-                                <form action="#0" method="POST">
-                                    <input class="form-control form-control-lg" name="name" id="name" type="text" placeholder="Your Name*" required aria-label=".form-control-lg example">
-                                    <input class="form-control form-control-lg" name="phone" id="phone" type="number" placeholder="Your Phone No" aria-label=".form-control-lg example">
-                                    <input class="form-control form-control-lg" name="email" id="email" type="email" placeholder="Your Email*" required aria-label=".form-control-lg example">
-                                    <textarea class="form-control pt-4" name="message" id="message" placeholder="Your Message" rows="3"></textarea>
-                                    <div class="btn_group">
-                                        <button type="submit" class="btn olive">Send Mail</button>  
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
+                            <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+    <div class="home_contact">
+        <form id="contactForm" action="#0" method="POST">
+            <input class="form-control form-control-lg" name="name" id="name" type="text" placeholder="Your Name*" required aria-label=".form-control-lg example">
+            <input class="form-control form-control-lg" name="phone" id="phone" type="number" placeholder="Your Phone No" aria-label=".form-control-lg example">
+            <input class="form-control form-control-lg" name="email" id="email" type="email" placeholder="Your Email*" required aria-label=".form-control-lg example">
+            <textarea class="form-control pt-4" name="message" id="message" placeholder="Your Message" rows="3"></textarea>
+            <div class="btn_group">
+                <button type="submit" class="btn olive">Send Mail</button>  
+            </div>
+            <!-- Message Div -->
+            <div class="contact__msg" style="display:none; margin-top:10px;"></div>
+        </form>
+    </div>
+</div>
                     </div>
                 </div>
                 
@@ -237,7 +245,7 @@
                                 </div>
                                 <div class="info_body">
                                     <h6>Office Address</h6>
-                                    <h5>Dubai, UAE</h5>
+                                    <h5>Sharjah,UAE</h5>
                                 </div>
                             </div>
                         </div>
@@ -326,6 +334,45 @@
         <!-- Google Map Calling -->
 	    <script src="assets/js/map.js"></script>
         <script src="https://maps.google.com/maps/api/js?key=AIzaSyCUiaBC-cJ0wcEtqCUtoXF3I91o9wS42gQ"></script>
+
+
+        
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault(); // Prevent default form submission
+
+    const form = e.target;
+    const data = new FormData(form);
+
+    // Send to FormSubmit.co
+    fetch('https://formsubmit.co/ajax/info@noorenterprisesuae.com', {
+        method: 'POST',
+        body: data
+    })
+    .then(response => response.json())
+    .then(data => {
+        const msgDiv = document.querySelector('.contact__msg');
+        msgDiv.style.display = 'block';
+
+        if(data.success || data.message){
+            msgDiv.classList.remove('alert-danger');
+            msgDiv.classList.add('alert-success');
+            msgDiv.innerText = "Your message was sent successfully!";
+            form.reset(); // Reset the form
+        }
+    })
+    .catch(error => {
+        const msgDiv = document.querySelector('.contact__msg');
+        msgDiv.style.display = 'block';
+        msgDiv.classList.remove('alert-success');
+        msgDiv.classList.add('alert-danger');
+        msgDiv.innerText = "Oops! Something went wrong.";
+        console.error('Error:', error);
+    });
+});
+</script>
+
+
     </body>
 
 <!-- Mirrored from wpthemebooster.com/demo/themeforest/html/mrittik/light/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 13 Dec 2025 05:59:40 GMT -->

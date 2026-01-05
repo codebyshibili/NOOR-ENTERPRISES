@@ -21164,3 +21164,36 @@ body.bg-dark.bg-white .under-construction-page .under-construction-content .sear
   color: #000000;
 }
 /*# sourceMappingURL=style.css.map */
+
+
+
+.name-topper {
+  background-color: #ae752a;
+  color: #000000;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 8px 0;
+  font-size: 22px; /* Desktop */
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .name-topper {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .name-topper {
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 6px 0;
+  }
+}
+/* Push header down safely */
+.header {
+  top: 30px; /* same height as topper */
+}
